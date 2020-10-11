@@ -26,7 +26,7 @@ public function q_item_content($q_item) {
         }
         elseif(!empty($matches[0])) {
             $this->output('<br/>');
-            $this->output('<a href="/'.$postid.'" rel="nofollow"><img src="' . $matches[1][0] . '" alt=".$q_item['raw']['title']."></a>');
+            $this->output('<a href="/'.$postid.'" rel="nofollow"><img src="' . $matches[1][0] . '" alt="'.$q_item['raw']['title'].'" > </a>');
         }
         $this->output('</div>');
     }
