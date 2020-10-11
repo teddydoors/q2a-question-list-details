@@ -7,4 +7,4 @@ Q2A Question List Details plugin display video (Youtube iframe), graphic image, 
 2. Display the first iframe video if any
 3. Display the first graphic image if any
 4. In case there are both videos and images, only the first video is displayed.
-5. May colide with other plugins or theme customizations that also override q_item_content function, or similar activities.
+5. May collide with other plugins or theme customizations that also override q_item_content function, or output similar activities.
