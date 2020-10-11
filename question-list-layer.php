@@ -10,7 +10,7 @@ public function q_item_content($q_item) {
     $postid = $q_item['raw']['postid'];
     $content = qa_db_read_one_value(qa_db_query_sub('SELECT content FROM ^posts WHERE postid IN (#)', $postid), true);
     if (!empty($content)) {
-        if (strlen($content) > 200) {
+        if (strlen(strip_tags($content)) > 200) {
             $shortcontent = substr(strip_tags($content), 0, 200).'[...]';
         }
         else {
